@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>좋아하는 색상 모두 선택</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>좋아하는 색상 하나 선택</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="radio" name="color" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="radio" name="color" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="radio" name="color" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">빨강</label>
+            <input type="radio" id="red" value="red" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>자기소개서</legend>
+        <textarea name="" id="" rows="15" cols="15">블라블라</textarea>
+      </fieldset>
+      <fieldset>
+        <legend>상품 선택</legend>
+        <ul>
+          <li>
+            <!-- 서버로 전송되는건  value-->
+            <select name="goods" id="goods" multiple>
+              <option value="apple_10kg">사과 10kg</option>
+              <option value="apple_20kg" selected>사과 20kg</option>
+              <option value="apple_30kg">사과 30kg</option>
+              <option value="apple_40kg">사과 40kg</option>
+            </select>
+          </li>
+          <li>
+            <label for="choice">맛 선택</label>
+            <input list="flavors" id="choice" name="flavors" />
+            <datalist id="flavors">
+              <option value="chocolate"></option>
+              <option value="banana"></option>
+              <option value="mint"></option>
+              <option value="apple"></option>
+            </datalist>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">제출하기</button>
+      <button type="reset">리셋하기</button>
+      <button type="button">버튼입니다</button>
+    </form>
+  </body>
+</html>
