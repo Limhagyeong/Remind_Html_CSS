@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 선택자 => 기본 스타일 초기화 */
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+
+      /* Type 선택자 */
+      h2 {
+        color: green;
+        text-align: center;
+      }
+      p {
+        color: grey;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      /* Class 선택자 */
+      .red--text {
+        color: red;
+      }
+
+      /* id 선택자 */
+      #blue--text {
+        color: blue;
+      }
+
+      /* 그륩 선택자 */
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <hr />
+    <h2>ddd</h2>
+    <p>
+      <span class="red--text">ddd</span>ddddddd<br />
+      dddddddddd<br />
+      dddddddddd<br />
+      dddddddddd<br />
+    </p>
+    <h2>ddd</h2>
+    <p>
+      ddddddd<span class="red--text">ddd</span><br />
+      dddddddddd<br />
+      dddddddddd<br />
+      dddddddddd<br />
+    </p>
+    <h2>ddd</h2>
+    <p>
+      <span id="blue--text">ddd</span>ddddddd<br />
+      dddddddddd<br />
+      dddddddddd<br />
+      dddddddddd<br />
+    </p>
+  </body>
+</html>

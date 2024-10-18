@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 속성이 존재하는 요소 */
+      h2[class] {
+        font-size: 30px;
+      }
+      [target] {
+        color: green;
+      }
+      /* 속성값과 일치하는 요소 */
+      h2[class='naver-title-1'] {
+        color: aqua;
+      }
+      /* 속성값 포함 */
+      a[href*='www'] {
+        text-decoration: none;
+      }
+      /* 속성값으로 시작 */
+      h2[class^='naver'] {
+        text-align: center;
+      }
+      /* 속성값으로 끝나는 */
+      /* h2[class$='naver'] {
+
+      } */
+      /* 속성에 단어 포함 */
+      /* h2[class~='title']{
+        
+      } */
+    </style>
+  </head>
+  <body>
+    <h2 class="naver-title-1">네이버</h2>
+    <a href="http://www.naver.com">네이버</a>
+    <h2 class="naver-title-2">네이버</h2>
+    <a href="http://www.naver.com" target="_blank">네이버</a>
+    <h2 class="naver-title-3">네이버</h2>
+    <a href="http://www.naver.com">네이버</a>
+    <h2>임하경</h2>
+  </body>
+</html>
